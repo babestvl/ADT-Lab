@@ -1,0 +1,3 @@
+C:/Users/Nutthapol/SKE/ADT-Lab/10502/cmake-build-debug/CMakeFiles/10502.dir
+C:/Users/Nutthapol/SKE/ADT-Lab/10502/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Nutthapol/SKE/ADT-Lab/10502/cmake-build-debug/CMakeFiles/rebuild_cache.dir
