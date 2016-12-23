@@ -51,7 +51,7 @@ void read_input()
 void find_levels(int s)
 {
     list<int> next_level;
-    for(int u=0; u<n; u++) {
+    for(int u=0; u<n*m; u++) {
         levels[u] = -1;
     }
     next_level.push_back(s);
@@ -88,19 +88,26 @@ int main()
         bool t = false;
         bool m = false;
         for (int j = 0; j < trees; j++) {
-            if (levels[j] != -1) {
+            if (levels[tree[j]] != -1) {
                 t = true;
                 break;
             }
         }
         for (int j = 0; j < minerals; j++) {
-            if (levels[j] != -1) {
+            if (levels[mineral[j]] != -1) {
                 m = true;
                 break;
             }
         }
+        if (t&&m) {
+            high++;
+        }
+        else if (t||m) {
+            medium++;
+        }
 
     }
+    cout << high << " " << medium;
 
     return 0;
 }
